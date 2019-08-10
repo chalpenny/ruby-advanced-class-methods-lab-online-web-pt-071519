@@ -36,8 +36,19 @@ class Song
     self.find_by_name(title) || self.create_by_name(title)
   end
 
-  def self.alphabetical
+  def Song.alphabetical
     self.all.sort_by {|s| s.name}
+  end
+
+  def Song.new_from_filename(song)
+    #parse data
+    data = song.split(" - ")
+    attributes = data.collect do |x|
+        artist_name = data[0]
+        name = data[1].pop
+    #set title and artist attributes
+    #remove "mp3" from end
+    #return a newly created song instance
   end
 
 end
