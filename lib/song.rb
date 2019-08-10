@@ -42,14 +42,14 @@ class Song
 
   def Song.new_from_filename(song)
     #parse data
-    data = song.split(" - ")
+    data = song.split(" - " ".")
     attributes = data.collect do |x|
         artist_name = data[0]
-        name = data[1].pop
+        name = data[1]
     #set title and artist attributes
     #remove "mp3" from end
     #return a newly created song instance
-  end
+    end
   end
 
 end
