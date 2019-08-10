@@ -50,5 +50,6 @@ class Song
     #remove "mp3" from end
     #return a newly created song instance
   end
+  end
 
 end
