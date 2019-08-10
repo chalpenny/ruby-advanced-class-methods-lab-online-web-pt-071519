@@ -1,3 +1,5 @@
+require 'pry'
+
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -43,6 +45,7 @@ class Song
   def Song.new_from_filename(song)
     #parse data
     data = song.split(" - " ".")
+    binding.pry
     attributes = data.collect do |x|
         self.artist_name = data[0]
         self.name = data[1]
