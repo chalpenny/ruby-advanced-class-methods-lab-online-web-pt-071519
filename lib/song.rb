@@ -2,7 +2,6 @@ class Song
   attr_accessor :name, :artist_name
   @@all = []
 
-
   def self.all
     @@all
   end
@@ -38,7 +37,7 @@ class Song
   end
 
   def self.alphabetical
-    @@all.sort
+    @@all.sort_by {|a,b| a <=> b}
   end
 
 end
