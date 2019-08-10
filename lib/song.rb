@@ -47,8 +47,10 @@ class Song
     data = song.split(" - ")
     binding.pry
     attributes = data.collect do |x|
-        self.artist_name = data[0]
-        self.name = data[1]
+        artist_name = data[0]
+        name = data[1]
+        Song.artist_name = artist_name
+        Song.name = name
     #set title and artist attributes
     #remove "mp3" from end
     #return a newly created song instance
