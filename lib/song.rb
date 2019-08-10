@@ -44,8 +44,8 @@ class Song
     #parse data
     data = song.split(" - " ".")
     attributes = data.collect do |x|
-        artist_name = data[0]
-        name = data[1]
+        self.artist_name = data[0]
+        self.name = data[1]
     #set title and artist attributes
     #remove "mp3" from end
     #return a newly created song instance
