@@ -57,7 +57,7 @@ class Song
     #set title and artist attributes
     #remove "mp3" from end
     #return a newly created song instance
-    
+
   end
 
 end
