@@ -44,7 +44,7 @@ class Song
 
   def Song.new_from_filename(song)
     #parse data
-    data = song.split(/[" - ",".""]/)
+    data = song.split(/[\" - "\.]/)
     binding.pry
     #attributes = data.collect do |x|
         artist_name = data[0]
